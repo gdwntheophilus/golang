@@ -1,1 +1,60 @@
-<p>login works!</p>
+<div class="LoginDiv">
+  <div class="LoginCardDiv">
+    <div class="card" style="width: 18rem">
+      <form #loginForm="ngForm" (ngSubmit)="UserLoginSubmit()">
+        <div class="card-body">
+          <div class="LoginElement">
+            <h1 class="card-title">Login</h1>
+          </div>
+          <div class="LoginElement">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text" id="btnGroupAddon">@</div>
+              </div>
+              <input
+                type="email"
+                class="form-control"
+                name="emailid"
+                placeholder="name@example.com"
+                aria-label="Input group example"
+                aria-describedby="btnGroupAddon"
+                [(ngModel)]="user.emailid"
+              />
+            </div>
+            <!-- <input
+                type="email"
+                class="form-control"
+                id="FormControlUserId"
+                name="emailid"
+                [(ngModel)]="user.emailid"
+                placeholder="name@example.com"
+              /> -->
+          </div>
+          <div class="LoginElement">
+            <input
+              type="password"
+              class="form-control"
+              name="password"
+              [(ngModel)]="user.password"
+              id="FormControlUserPassword"
+              placeholder="Password"
+            />
+          </div>
+          <div>
+            <button type="submit" class="btn btn-lg btn-dark">Sign In</button>
+          </div>
+          <div>
+            <ul class="nav nav-pills">
+              <li class="nav-item LoginRegister">
+                <a class="nav-link active" href="#">Register</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="color: red" class="card-title">{{ loginStatus }}</h4>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

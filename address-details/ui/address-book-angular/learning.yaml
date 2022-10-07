@@ -1,0 +1,13 @@
+Components:
+    Data Binding
+    Property binding [disabled] [innerText] [binding-target]=”binding-source”
+    Event Binding  (click)="onSave()" <target-event)="TemplateStatement", (onclick)="closeMe()", <input (input)="handleInput($event)">
+    Two Way binding
+    Interpolation {{ templateExpression }} {{getTitle()}} can be a function as well
+    Property binding, style.color={{giveMeRed}}, class = "{{giveMeRed}}",[src]="itemImageUrl", <img src="{{itemImageUrl}}"> , <a href="/product/{{productID}}">{{productName}}</a>
+    ngFor, <li *ngFor="let d of items"> {{ d.name }} </li>
+    pipes, {{title | uppercase}} , {{title | uppercase | lowercase}} ,{{items | json}}
+    safe navigation operator, {{nullItem?.itemName}}, 
+    non-null assertion operator, {{item!.name}}
+
+
