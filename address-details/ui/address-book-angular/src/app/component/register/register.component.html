@@ -1,0 +1,86 @@
+<div class="LoginDiv">
+  <div class="LoginCardDiv">
+    <div class="card" style="width: 18rem">
+      <form #loginForm="ngForm" (ngSubmit)="UserRegisterSubmit()">
+        <div class="card-body">
+          <div class="LoginElement">
+            <h1 class="card-title">Register User</h1>
+          </div>
+          <div class="LoginElement">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text" id="btnGroupAddon">@</div>
+              </div>
+              <input
+                type="email"
+                class="form-control"
+                name="emailid"
+                placeholder="name@example.com"
+                aria-label="Input group example"
+                aria-describedby="btnGroupAddon"
+                [(ngModel)]="user.emailid"
+              />
+            </div>
+            <!-- <input
+                type="email"
+                class="form-control"
+                id="FormControlUserId"
+                name="emailid"
+                [(ngModel)]="user.emailid"
+                placeholder="name@example.com"
+              /> -->
+          </div>
+          <div class="LoginElement">
+            <input
+              type="password"
+              class="form-control"
+              name="password"
+              [(ngModel)]="user.password"
+              id="FormControlUserPassword"
+              placeholder="Password"
+            />
+          </div>
+          <div class="LoginElement">
+            <input
+              type="password"
+              class="form-control"
+              name="password"
+              [(ngModel)]="user.retypepassword"
+              id="FormControlUserRetypePassword"
+              placeholder="Retype Password"
+            />
+          </div>
+          <div class="LoginElement">
+            <input
+              type="text"
+              class="form-control"
+              name="firstname"
+              [(ngModel)]="user.firstname"
+              id="FormControlUserFirstname"
+              placeholder="First Name"
+            />
+          </div>
+          <div class="LoginElement">
+            <input
+              type="text"
+              class="form-control"
+              name="lastname"
+              [(ngModel)]="user.lastname"
+              id="FormControlUserLastname"
+              placeholder="Last Name"
+            />
+          </div>
+          <div>
+            <button type="submit" class="btn btn-lg btn-dark">Register</button>
+          </div>
+          <div>
+            <h4 style="color: red" class="card-title">{{ registerStatus }}</h4>
+          </div>
+          <div *ngIf="isRegistered">
+            click <a routerLink="/login">here</a> to login
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

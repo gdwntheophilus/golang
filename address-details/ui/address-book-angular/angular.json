@@ -100,5 +100,7 @@
       }
     }
   },
-  "defaultProject": "address-book-angular"
+  "cli": {
+    "analytics": "efd03f4e-bedf-4241-a5fc-53f4742cd381"
+  }
 }

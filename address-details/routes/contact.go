@@ -17,7 +17,7 @@ var contactCollection *mongo.Collection = db.GetCollection(db.DB, "contacts")
 
 func ContactRoute(app *fiber.App) {
 	contactGroup := app.Group("contact", logger.New())
-	contactGroup.Get("/getAllContacts", getAllContacts)
+	contactGroup.Post("/getAllContacts", getAllContacts)
 	contactGroup.Post("/saveContact", saveAllContacts)
 }
 
@@ -58,7 +58,7 @@ func getAllContacts(c *fiber.Ctx) error {
 	fmt.Println(userFilter)
 
 	var contacts []model.MContact
-	cursor, err := contactCollection.Find(ctx, bson.D{{"emailid", "gdwntheophilus@gmail.com"}})
+	cursor, err := contactCollection.Find(ctx, bson.D{{"emailid", userFilter["emailid"]}})
 	// userFilter["emailid"]
 	if err != nil {
 		return err

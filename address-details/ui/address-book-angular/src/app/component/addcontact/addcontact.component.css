@@ -1,0 +1,71 @@
+.LoginDiv {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: AnimateBG 20s ease infinite;
+}
+
+.LoginElement {
+  margin-bottom: 2%;
+
+}
+
+.LoginCardDiv {
+  /* display: flex; */
+  width: 70%;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  padding-top: 3%;
+}
+
+.card-title {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+
+}
+
+
+
+.input-group-text {
+  border-radius: 0rem;
+}
+
+.form-control {
+  border-radius: 0rem;
+}
+
+
+.btn-lg, .btn-group-lg > .btn {
+  --bs-btn-padding-y: 0.5rem;
+  --bs-btn-padding-x: 0.8rem;
+  --bs-btn-font-size: 0.8rem;
+  --bs-btn-border-radius: 0;
+  margin-right: 1%;
+  width: 100%;
+}
+
+.nav-pills{
+  width: 100%;
+}
+
+.nav-pills .nav-link {
+  margin-top: 5%;
+  border-radius: 0;
+  width: 100%;
+  background-color: #C3C6CA;
+}
+
+.nav-pills .nav-link:hover {
+  margin-top: 5%;
+  border-radius: 0;
+  width: 100%;
+  background-color: #2d2d2d;
+}
+
+.form-select {
+  border-radius: 0px;
+}

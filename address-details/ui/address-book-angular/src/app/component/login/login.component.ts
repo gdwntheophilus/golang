@@ -11,8 +11,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
-  // constructor(private router: Router) {}
-
+  // ngOnInit(): void {}
+  OnInit(): void {}
   urlsService: any;
   user: User = {
     emailid: '',
@@ -48,7 +48,8 @@ export class LoginComponent implements OnInit {
           if (response.status === 'Ok') {
             this.loginStatus = response.message;
             console.log('login router');
-            this.router.navigate(['login']);
+            sessionStorage.setItem('token', this.user.emailid);
+            this.router.navigate(['address']);
           }
         });
     } else {

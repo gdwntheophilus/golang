@@ -9,6 +9,9 @@ import { MatTableModule } from '@angular/material/table';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatExpansionModule } from '@angular/material/expansion';
+// import { MatDatepickerModule } from '@angular/material/datepicker';
 
 @NgModule({
   declarations: [],
@@ -23,6 +26,9 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     MatMenuModule,
     MatIconModule,
     MatProgressSpinnerModule,
+    MatTabsModule,
+    MatExpansionModule,
+    // MatDatepickerModule,
   ],
   exports: [
     CommonModule,
@@ -35,6 +41,9 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     MatMenuModule,
     MatIconModule,
     MatProgressSpinnerModule,
+    MatTabsModule,
+    MatExpansionModule,
+    // MatDatepickerModule,
   ],
 })
 export class MaterialModule {}

@@ -11,9 +11,24 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './component/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HomeComponent } from './component/home/home.component';
+import { RegisterComponent } from './component/register/register.component';
+import { AdressbookComponent } from './adressbook/adressbook.component';
+import { LogoutComponent } from './component/logout/logout.component';
+import { AddcontactComponent } from './component/addcontact/addcontact.component';
+import { ViewcontactComponent } from './component/viewcontact/viewcontact.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent],
+  declarations: [
+    AppComponent,
+    LoginComponent,
+    HomeComponent,
+    RegisterComponent,
+    AdressbookComponent,
+    LogoutComponent,
+    AddcontactComponent,
+    ViewcontactComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

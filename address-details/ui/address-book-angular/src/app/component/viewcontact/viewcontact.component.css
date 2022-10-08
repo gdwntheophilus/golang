@@ -1,0 +1,13 @@
+.mat-card {
+  background: #ffffff;
+  color: #000;
+}
+
+
+.contact-display-name {
+  display: flex;
+  gap: 10px;
+  flex-basis: 0;
+  flex-grow: 1;
+  justify-content: space-between;
+}

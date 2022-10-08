@@ -1,0 +1,92 @@
+<div class="LoginDiv">
+  <div class="LoginCardDiv">
+    <form #loginForm="ngForm" (ngSubmit)="UserLoginSubmit()">
+      <div class="card-body">
+        <div class="LoginElement">
+          <div class="LoginElement">
+            <input
+              type="text"
+              class="form-control"
+              name="name"
+              [(ngModel)]="user.name"
+              id="FormControlUserFirstname"
+              placeholder="Name"
+            />
+          </div>
+          <div class="LoginElement">
+            <input
+              type="text"
+              class="form-control"
+              name="phonenumber"
+              [(ngModel)]="user.phonenumber"
+              id="FormControlUserPhonenumber"
+              placeholder="Phone"
+            />
+          </div>
+          <!-- <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text" id="btnGroupAddon">@</div>
+            </div>
+            <input
+              type="email"
+              class="form-control"
+              name="emailid"
+              placeholder="name@example.com"
+              aria-label="Input group example"
+              aria-describedby="btnGroupAddon"
+              [(ngModel)]="user.emailid"
+            />
+          </div> -->
+          <!-- <input
+                type="email"
+                class="form-control"
+                id="FormControlUserId"
+                name="emailid"
+                [(ngModel)]="user.emailid"
+                placeholder="name@example.com"
+              /> -->
+        </div>
+
+        <div class="LoginElement">
+          <label>Contact Type</label>
+          <select
+            class="form-select"
+            aria-label="Default select example"
+            [(ngModel)]="user.contacttype"
+            name="contacttype"
+          >
+            <option value="Mobile">Mobile</option>
+            <option value="Home">Home</option>
+            <option value="Home">Other</option>
+          </select>
+        </div>
+
+        <div class="LoginElement">
+          <label>Relationship</label>
+          <select
+            class="form-select"
+            aria-label="Default select example"
+            [(ngModel)]="user.relationship"
+            name="contacttype"
+          >
+            <option value="Father">Father</option>
+            <option value="Mother">Mother</option>
+            <option value="Wife">Wife</option>
+            <option value="Daugter">Daugter</option>
+            <option value="Son">Son</option>
+            <option value="Husband">Husband</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div>
+          <button type="submit" class="btn btn-lg btn-dark">Add Contact</button>
+        </div>
+
+        <div style="margin-top: 5%">
+          <h4 style="color: red" class="card-title">{{ loginStatus }}</h4>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

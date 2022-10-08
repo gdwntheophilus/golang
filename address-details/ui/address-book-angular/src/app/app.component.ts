@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   isMenuCollapsed: any = true;
+
+  constructor() {}
+
   ngOnInit(): void {}
 }

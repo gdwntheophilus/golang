@@ -1,0 +1,31 @@
+<div class="home-component">
+  <!-- <p>home works!</p> -->
+  <div class="home-item">
+    <img src="../../../assets/5439071.png" alt="" />
+  </div>
+  <div class="home-item">
+    <div class="login-button" *ngIf="isLoggedIn">
+      <button type="button" (click)="redirectLogin()" class="btn btn-warning">
+        Login
+      </button>
+    </div>
+    <div class="logout-button" *ngIf="!isLoggedIn">
+      <button
+        type="button"
+        (click)="redirectLoginout()"
+        class="btn btn-warning"
+      >
+        Logout
+      </button>
+    </div>
+    <div class="register-button" *ngIf="isLoggedIn">
+      <button
+        type="button"
+        (click)="redirectRegister()"
+        class="btn btn-warning"
+      >
+        Register
+      </button>
+    </div>
+  </div>
+</div>

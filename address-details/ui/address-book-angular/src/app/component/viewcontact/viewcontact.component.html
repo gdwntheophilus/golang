@@ -1,0 +1,14 @@
+<div *ngFor="let contact of contacts">
+  <mat-card>
+    <div>
+      <div class="contact-display-name">
+        <mat-icon>account_circle</mat-icon>
+        <h5>{{ contact.name }}</h5>
+        <mat-icon>phone</mat-icon>
+        <h5>{{ contact.phonenumber }}</h5>
+        <mat-icon>group_work</mat-icon>
+        <h5>{{ contact.relationship }}</h5>
+      </div>
+    </div>
+  </mat-card>
+</div>
