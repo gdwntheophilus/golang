@@ -4,12 +4,13 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class UrlsService {
+  baseUrl = 'http://ec2-3-110-147-16.ap-south-1.compute.amazonaws.com:8080';
   public urls() {
     return {
-      getRegisteredUser: 'http://localhost:8080/user/getRegisteredUser',
-      registerUser: 'http://localhost:8080/user/register',
-      saveContact: 'http://localhost:8080/contact/saveContact',
-      getAllContacts: 'http://localhost:8080/contact/getAllContacts',
+      getRegisteredUser: this.baseUrl + '/user/getRegisteredUser',
+      registerUser: this.baseUrl + '/user/register',
+      saveContact: this.baseUrl + '/contact/saveContact',
+      getAllContacts: this.baseUrl + '/contact/getAllContacts',
     };
   }
 
