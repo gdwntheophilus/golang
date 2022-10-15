@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	botToken := "5665585256:AAGlVYVVvVIjyD-u-XHN5i3vn_mCN_YRNzU"
+	botToken := "5665585256:mmmmmmmmmm-u-XHN5i3vn_mCN_YRNzU"
 	botApi := "https://api.telegram.org/bot"
 	botUrl := botApi + botToken
 	fmt.Println(botUrl)
@@ -96,5 +96,5 @@ func sendResponse(botUrl string, update Update) error {
 
 }
 
-//https://api.telegram.org/bot5665585256:AAGlVYVVvVIjyD-u-XHN5i3vn_mCN_YRNzU/getMe
-//https://api.telegram.org/bot5665585256:AAGlVYVVvVIjyD-u-XHN5i3vn_mCN_YRNzU/getUpdates
+//https://api.telegram.org/bot5665585256:knlnlknlknlknlkn-u-XHN5i3vn_mCN_YRNzU/getMe
+//https://api.telegram.org/bot5665585256:hhhhgggghooinonoin-u-XHN5i3vn_mCN_YRNzU/getUpdates
